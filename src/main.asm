@@ -1,0 +1,8 @@
+INCLUDE "config.inc"
+INCLUDE "data.inc"
+INCLUDE "graphics.inc"
+INCLUDE "input.inc"
+INCLUDE "movement.inc"
+INCLUDE "collision.inc"
+INCLUDE "food.inc"
+INCLUDE "score.inc"
