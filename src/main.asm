@@ -43,6 +43,7 @@ MAIN PROC
     CALL INIT_GRAPHICS
     CALL DRAW_BOARD
     CALL DRAW_FOOD
+    CALL DRAW_SCORE
 
 ; Game loop starts
 GAME_LOOP:
@@ -52,6 +53,9 @@ GAME_LOOP:
     ; Move Snake 
     CALL UPDATE_SNAKE_POSITION
 
+    ;check if ate food
+    CALL CHECK_FOOD
+    
     ; a wall or self collision
     CALL CHECK_COLLISIONS
     CMP  game_over, 1
