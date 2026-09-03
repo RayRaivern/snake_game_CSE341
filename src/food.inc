@@ -8,7 +8,7 @@ CHECK_FOOD PROC NEAR
 	CMP AL, food_y
 	JNE Dont_Eat
 
-	ADD score, 10
+	ADD score, 1
 	CMP snake_length, MAX_SNAKE_LEN
 	JGE Skip_Grow
 	
